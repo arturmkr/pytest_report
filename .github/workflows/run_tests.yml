@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          pytest main.py -v --junitxml="result.xml"
+          pipenv run pytest main.py -v --junitxml="result.xml"
 
       - name: Test Report
         uses: dorny/test-reporter@v1.5.0
